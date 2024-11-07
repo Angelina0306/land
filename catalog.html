@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./_catalog.scss">
+    <title>Catalog</title>
+  </head>
+  <body>
+     <div class="top_catalog center">
+    <header class="header">
+   <div class="wrapper">
+    <a href="./index..html" class="header__top__a"><img src="./img/logo.svg" alt="card1" class="logo" /></a>
+      <input placeholder="Поиск" class="header__input" type="text">
+      <nav class="header__nav">
+        <ul class="header__ul">
+        <li class="header__li">
+          <a href="./catalog.html" class="header___a">Каталог</a></li>
+          <li class="li">
+            <a href="./cart.html" class="header___a">Корзина</a>
+          </li>
+        </ul>
+   </div>
+    </header>
+  <section class="section_text">
+    <div class="wrapper">
+      <h1 class="header__catalog">Каталог</h1>
+    </div>
+  </section>
+ <section class="cart center">
+        <div class="wrapper">
+          <nav class="cart_content_c">
+            <a class="cart-name-box" href="index.html"> Главная </a>
+            <span class="span">/</span>
+            <a class="cart-name-box" href="catalog.html"> Каталог товаров </a>
+        </nav>
+      <div class="select__top">
+          <div class="select">
+      <div class="select__header">
+        <button class="select__heading">Фильтрация</button>
+        <div class="select__chevron">
+          <svg
+            width="18"
+            height="9"
+            viewBox="0 0 18 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M9 9L0.339745 0.749998L17.6603 0.75L9 9Z" fill="black" />
+          </svg>
+        </div>
+      </div>
+      <div class="select__body">
+        <form class="filter-form">
+          <div class="filter__fieldset">
+            <p class="filter__fieldset-heading">Сроки доставки</p>
+            <div class="filter__label-list">
+              <label class="filter__fieldset-label">
+                <input
+                  class="filter__radio-input"
+                  type="radio"
+                  name="delivery"
+                  id=""
+                />
+                <div class="filter__custom-radio"></div>
+                Неважно
+              </label>
+              <label class="filter__fieldset-label">
+                <input
+                  class="filter__radio-input"
+                  type="radio"
+                  name="delivery"
+                  id=""
+                />
+                <div class="filter__custom-radio"></div>
+                Сегодня
+              </label>
+              <label class="filter__fieldset-label">
+                <input
+                  class="filter__radio-input"
+                  type="radio"
+                  name="delivery"
+                  id=""
+                />
+                <div class="filter__custom-radio"></div>
+                Завтра
+              </label>
+              <label class="filter__fieldset-label">
+                <input
+                  class="filter__radio-input"
+                  type="radio"
+                  name="delivery"
+                  id=""
+                />
+                <div class="filter__custom-radio"></div>
+                До 3 дней
+              </label>
+              <label class="filter__fieldset-label">
+                <input
+                  class="filter__radio-input"
+                  type="radio"
+                  name="delivery"
+                  id=""
+                />
+                <div class="filter__custom-radio"></div>
+                До 7 дней
+              </label>
+            </div>
+          </div>
+          <div class="filter__fieldset">
+            <p class="filter__fieldset-heading">Цена</p>
+            <div class="filter__fieldset-price-row">
+              <p class="filter__fieldset-price">от <span>0</span> руб.</p>
+              <p class="filter__fieldset-price">до <span>100000</span> руб.</p>
+            </div>
+            <div class="slide">
+ <input class="line1" type="range" id="cowbell" name="cowbell" min="0" max="100000" value="0" step="10" />
+<input class="line2" type="range" id="cowbell" name="cowbell" min="0" max="100000" value="100000" step="10" />
+            </div>
+          </div>
+          <div class="filter__fieldset">
+            <p class="filter__fieldset-heading">Цвет</p>
+            <div class="filter__color-grid">
+              <label class="filter__color-grid-label">
+                <input
+                  class="filter__color-input filter__color-input_white"
+                  type="checkbox"
+                  name="color"
+                  id=""
+                />
+                <div class="filter__color-custom-checkbox"></div>
+              </label>
+              <label class="filter__color-grid-label">
+                <input
+                  class="filter__color-input filter__color-input_black"
+                  type="checkbox"
+                  name="color"
+                  id=""
+                />
+                <div class="filter__color-custom-checkbox"></div>
+              </label>
+              <label class="filter__color-grid-label">
+                <input
+                  class="filter__color-input filter__color-input_grey"
+                  type="checkbox"
+                  name="color"
+                  id=""
+                />
+                <div class="filter__color-custom-checkbox"></div>
+              </label>
+              <label class="filter__color-grid-label">
+                <input
+                  class="filter__color-input filter__color-input_red"
+                  type="checkbox"
+                  name="color"
+                  id=""
+                />
+                <div class="filter__color-custom-checkbox"></div>
+              </label>
+              <label class="filter__color-grid-label">
+                <input
+                  class="filter__color-input filter__color-input_orange"
+                  type="checkbox"
+                  name="color"
+                  id=""
+                />
+                <div class="filter__color-custom-checkbox"></div>
+              </label>
+              <label class="filter__color-grid-label">
+                <input
+                  class="filter__color-input filter__color-input_yellow"
+                  type="checkbox"
+                  name="color"
+                  id=""
+                />
+                <div class="filter__color-custom-checkbox"></div>
+              </label>
+              <label class="filter__color-grid-label">
+                <input
+                  class="filter__color-input filter__color-input_green"
+                  type="checkbox"
+                  name="color"
+                  id=""
+                />
+                <div class="filter__color-custom-checkbox"></div>
+              </label>
+              <label class="filter__color-grid-label">
+                <input
+                  class="filter__color-input filter__color-input_lt-green"
+                  type="checkbox"
+                  name="color"
+                  id=""
+                />
+                <div class="filter__color-custom-checkbox"></div>
+              </label>
+              <label class="filter__color-grid-label">
+                <input
+                  class="filter__color-input filter__color-input_lt-blue"
+                  type="checkbox"
+                  name="color"
+                  id=""
+                />
+                <div class="filter__color-custom-checkbox"></div>
+              </label>
+              <label class="filter__color-grid-label">
+                <input
+                  class="filter__color-input filter__color-input_blue"
+                  type="checkbox"
+                  name="color"
+                  id=""
+                />
+                <div class="filter__color-custom-checkbox"></div>
+              </label>
+              <label class="filter__color-grid-label">
+                <input
+                  class="filter__color-input filter__color-input_dark-purple"
+                  type="checkbox"
+                  name="color"
+                  id=""
+                />
+                <div class="filter__color-custom-checkbox"></div>
+              </label>
+              <label class="filter__color-grid-label">
+                <input
+                  class="filter__color-input filter__color-input_purple"
+                  type="checkbox"
+                  name="color"
+                  id=""
+                />
+                <div class="filter__color-custom-checkbox"></div>
+              </label>
+              <label class="filter__color-grid-label">
+                <input
+                  class="filter__color-input filter__color-input_lt-purple"
+                  type="checkbox"
+                  name="color"
+                  id=""
+                />
+                <div class="filter__color-custom-checkbox"></div>
+              </label>
+              <label class="filter__color-grid-label">
+                <input
+                  class="filter__color-input filter__color-input_pink"
+                  type="checkbox"
+                  name="color"
+                  id=""
+                />
+                <div class="filter__color-custom-checkbox"></div>
+              </label>
+            </div>
+          </div>
+          <div class="filter__fieldset">
+            <p class="filter__fieldset-heading">Тип комнаты</p>
+            <div class="filter__fieldset-checkbox-list">
+              <label class="filter__fieldset-checkbox-label">
+                <input
+                  type="checkbox"
+                  name="type"
+                  class="filter__fieldset-checbox-input"
+                />
+                <div class="filter__custom-checkbox"></div>
+                Кухня и столовая
+              </label>
+              <label class="filter__fieldset-checkbox-label">
+                <input
+                  type="checkbox"
+                  name="type"
+                  class="filter__fieldset-checbox-input"
+                />
+                <div class="filter__custom-checkbox"></div>
+                Ванная комната
+              </label>
+              <label class="filter__fieldset-checkbox-label">
+                <input
+                  type="checkbox"
+                  name="type"
+                  class="filter__fieldset-checbox-input"
+                />
+                <div class="filter__custom-checkbox"></div>
+                Детская комната
+              </label>
+              <label class="filter__fieldset-checkbox-label">
+                <input
+                  type="checkbox"
+                  name="type"
+                  class="filter__fieldset-checbox-input"
+                />
+                <div class="filter__custom-checkbox"></div>
+                Домашний офис
+              </label>
+              <label class="filter__fieldset-checkbox-label">
+                <input
+                  type="checkbox"
+                  name="type"
+                  class="filter__fieldset-checbox-input"
+                />
+                <div class="filter__custom-checkbox"></div>
+                Гостиная
+              </label>
+              <label class="filter__fieldset-checkbox-label">
+                <input
+                  type="checkbox"
+                  name="type"
+                  class="filter__fieldset-checbox-input"
+                />
+                <div class="filter__custom-checkbox"></div>
+                Прихожая
+              </label>
+              <label class="filter__fieldset-checkbox-label">
+                <input
+                  type="checkbox"
+                  name="type"
+                  class="filter__fieldset-checbox-input"
+                />
+                <div class="filter__custom-checkbox"></div>
+                Спальня
+              </label>
+              <label class="filter__fieldset-checkbox-label">
+                <input
+                  type="checkbox"
+                  name="type"
+                  class="filter__fieldset-checbox-input"
+                />
+                <div class="filter__custom-checkbox"></div>
+                Гардероб
+              </label>
+              <label class="filter__fieldset-checkbox-label">
+                <input
+                  type="checkbox"
+                  name="type"
+                  class="filter__fieldset-checbox-input"
+                />
+                <div class="filter__custom-checkbox"></div>
+                Дача
+              </label>
+              <label class="filter__fieldset-checkbox-label">
+                <input
+                  type="checkbox"
+                  name="type"
+                  class="filter__fieldset-checbox-input"
+                />
+                <div class="filter__custom-checkbox"></div>
+                Свет
+              </label>
+            </div>
+          </div>
+          <button class="filter-form__btn" type="submit">Применить</button>
+        </form>
+      </div>
+    </div>
+        <div class="select__header">
+           <button class="select__heading">По популярности</button>
+             <div class="select__chevron_2">
+          <svg
+            width="18"
+            height="9"
+            viewBox="0 0 18 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M9 9L0.339745 0.749998L17.6603 0.75L9 9Z" fill="black" />
+          </svg>
+        </div>
+        </div>
+      </div>
+        </div>
+    </section>
+ <section class="section__catalog">
+  <div class="wrapper">
+    <ul class="catalog__ul__1">
+      <li class="catalog__li__1">
+         <img src="./img/foto1.jpg" alt="card" class="catalog__img" />
+      <h3 class="catalog__h3">Кровать TATRAN</h3>
+      <p class="catalog__text">
+       Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.
+      </p>
+       <p class="catalog__price">120 000 руб.</p>
+      </li>
+       <li class="catalog__li__1">
+         <img src="./img/foto2.jpg" alt="card" class="catalog__img" />
+      <h3 class="catalog__h3">Кресло VILORA</h3>
+      <p class="catalog__text">
+       Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.
+      </p>
+       <p class="catalog__price">21 000 руб.</p>
+      </li>
+       <li class="catalog__li__1">
+         <img src="./img/foto3.jpg" alt="card" class="catalog__img" />
+      <h3 class="catalog__h3">Стол MENU</h3>
+      <p class="catalog__text">
+      Европейский дуб - отличается особой прочностью и стабильностью.
+      </p>
+       <p class="catalog__price">34 000 руб.</p>
+      </li>
+       <li class="catalog__li__1">
+         <img src="./img/foto4.jpg" alt="card" class="catalog__img" />
+      <h3 class="catalog__h3">Диван ASKESTA</h3>
+      <p class="catalog__text">
+      Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать
+      </p>
+       <p class="catalog__price">68 000 руб..</p>
+      </li>
+       <li class="catalog__li__1">
+         <img src="./img/foto5.jpg" alt="card" class="catalog__img" />
+      <h3 class="catalog__h3">Кресло LUNAR</h3>
+      <p class="catalog__text">
+       Прекрасно переносит солнечные лучи, перепады влажности и любые осадки
+      </p>
+       <p class="catalog__price">40 000 руб.</p>
+      </li>
+       <li class="catalog__li__1">
+         <img src="./img/foto6.jpg" alt="card" class="catalog__img" />
+      <h3 class="catalog__h3">Шкаф Nastan</h3>
+      <p class="catalog__text">
+       Мебель может быть оснащена разнообразными системами подсветки.
+      </p>
+       <p class="catalog__price">80 000 руб.</p>
+      </li>
+            <li class="catalog__li__1">
+         <img src="./img/foto1.jpg" alt="card" class="catalog__img" />
+      <h3 class="catalog__h3">Кровать TATRAN</h3>
+      <p class="catalog__text">
+       Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.
+      </p>
+       <p class="catalog__price">120 000 руб.</p>
+      </li>
+       <li class="catalog__li__1">
+         <img src="./img/foto2.jpg" alt="card" class="catalog__img" />
+      <h3 class="catalog__h3">Кресло VILORA</h3>
+      <p class="catalog__text">
+       Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.
+      </p>
+       <p class="catalog__price">21 000 руб.</p>
+      </li>
+       <li class="catalog__li__1">
+         <img src="./img/foto3.jpg" alt="card" class="catalog__img" />
+      <h3 class="catalog__h3">Стол MENU</h3>
+      <p class="catalog__text">
+      Европейский дуб - отличается особой прочностью и стабильностью.
+      </p>
+       <p class="catalog__price">34 000 руб.</p>
+      </li>
+       <li class="catalog__li__1">
+         <img src="./img/foto4.jpg" alt="card" class="catalog__img" />
+      <h3 class="catalog__h3">Диван ASKESTA</h3>
+      <p class="catalog__text">
+      Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать
+      </p>
+       <p class="catalog__price">68 000 руб..</p>
+      </li>
+       <li class="catalog__li__1">
+         <img src="./img/foto5.jpg" alt="card" class="catalog__img" />
+      <h3 class="catalog__h3">Кресло LUNAR</h3>
+      <p class="catalog__text">
+       Прекрасно переносит солнечные лучи, перепады влажности и любые осадки
+      </p>
+       <p class="catalog__price">40 000 руб.</p>
+      </li>
+       <li class="catalog__li__1">
+         <img src="./img/foto6.jpg" alt="card" class="catalog__img" />
+      <h3 class="catalog__h3">Шкаф Nastan</h3>
+      <p class="catalog__text">
+       Мебель может быть оснащена разнообразными системами подсветки.
+      </p>
+       <p class="catalog__price">80 000 руб.</p>
+      </li>
+    </ul>
+       <a href="#" class="catalog__a">Перейти в каталог</a>
+  </div>
+ </section>
+  <footer class="footer">
+  <div class="wrapper">
+    <img src="./img/Интерьер..svg" alt="card" class="img_inter">
+      <div class="footer__top_1 ">
+          <h4 class="footer__h4__menu">Меню</h4>
+        <ul class="footer__ul_nav">
+          <li class="footer__li__footer__1"><a href="./index..html" class="footer__a__menu">Главная</a></li>
+          <li class="footer__li__1"><a href="./catalog.html" class="footer__a__menu">Каталог</a></li>
+          <li class="footer__li__1"><a href="./cart.html" footer__class="footer__a__menu">Корзина</a></li>
+        </ul>
+      </div>
+    <div class="footer__top__2">
+        <h4 class="footer__top2__h4">Контакты</h4>
+      <a href="#" class="footer__a__contact">+7 908 800 80 80</a>
+      <a href="#" class="footer__a__contact">help@interier.com</a>
+     <div class="footer__icons">
+       <a href="#" class="footer__svg"
+        ><img src="./img/vk.svg" alt="card" class="footer__img__svg"
+      /></a>
+      <a href="#" class="footer__svg"
+        ><img src="./img/telegram.svg" alt="card" class="footer__img_svg"
+      /></a>
+      <a href="#" class="footer__svg"
+        ><img src="./img/dzen.svg" alt="card" class="footer__img__svg"
+      /></a>
+     </div>
+    </div>
+      <form action="#" class="footer__form">
+        <p class="footer__form__text">Получайте наши новости и обновления</p>
+        <input placeholder="Ваш e-mail" class="footer__input" type="text">
+        <button class="footer__button">Подписаться</button>
+      </form>
+  </div>
+
+       <div class="range">
+                            <label class="range__label" for="price-range"
+                              >от 0 руб. до 100000 руб.</label
+                            >
+                            <div class="range__slider">
+                              <input
+                                class="range__input range__input--min"
+                                name="range_1"
+                                type="range"
+                                min="1"
+                                max="100000"
+                                value="1"
+                              />
+                              <input
+                                class="range__input range__input--max"
+                                name="range_1"
+                                type="range"
+                                min="1"
+                                max="100000"
+                                value="100000"
+                              />
+                            </div>
+                          </div>
+    </footer>
+    
+   <script type="text/javascript">
+        $(function() {
+            $('.slider').slider({
+        values: [0, 100000],
+        range: true,
+    });
+
+        });
+    </script>
+  </body>
+</html>
+
+
